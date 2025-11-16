@@ -1,0 +1,16 @@
+version: '3.9'
+
+services:
+  mini-pricing-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: mini-pricing-api
+    ports:
+      - "5000:8080"   # maps host port 8080 to container port 8080
+      - "8081:8081"   # optional extra port if your API exposes multiple ports
+    environment:
+      DOTNET_ENVIRONMENT: Development
+    volumes:
+      - ./UploadedCsv:/app/UploadedCsv   # maps local folder for CSV uploads
+    restart: unless-stopped

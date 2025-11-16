@@ -1,0 +1,34 @@
+[
+  {
+    "RuleType": "WeightTier",
+    "MinWeight": 0,
+    "MaxWeight": 10,
+    "PricePerTier": 200,
+    "Id": "bad02884-d980-4665-bf78-537e30122c32",
+    "Priority": 0,
+    "EffectiveFrom": "0001-01-01T00:00:00",
+    "EffectiveTo": "9999-12-31T23:59:59.9999999",
+    "IsActive": true
+  },
+  {
+    "RuleType": "TimeWindowPromotion",
+    "DiscountPercent": 30,
+    "Id": "2fa62982-8976-4e11-bd44-113057a14044",
+    "Priority": 1,
+    "EffectiveFrom": "2025-11-16T17:44:12.986Z",
+    "EffectiveTo": "2025-11-19T17:44:12.986Z",
+    "IsActive": true
+  },
+  {
+    "RuleType": "RemoteAreaSurcharge",
+    "RemoteAreas": [
+      "A22"
+    ],
+    "Surcharge": 10,
+    "Id": "f00b51fa-9cbb-4e12-a771-c16e4d389a93",
+    "Priority": 2,
+    "EffectiveFrom": "2025-11-16T17:44:12.986Z",
+    "EffectiveTo": "2025-11-19T17:44:12.986Z",
+    "IsActive": true
+  }
+]

@@ -1,0 +1,793 @@
+2025-11-16 15:59:07.194 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 15:59:07.392 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 15:59:07.396 +07:00 [INF] Hosting environment: Development
+2025-11-16 15:59:07.400 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 15:59:25.348 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-16 15:59:25.383 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 51.799ms
+2025-11-16 15:59:25.548 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-16 15:59:25.679 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 131.701ms
+2025-11-16 15:59:25.731 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/swagger/v1/swagger.json - null null
+2025-11-16 15:59:25.826 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-16 15:59:25.831 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/swagger/v1/swagger.json - 404 0 null 100.3047ms
+2025-11-16 15:59:25.837 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5254/swagger/v1/swagger.json, Response status code: 404
+2025-11-16 15:59:30.759 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-16 15:59:30.765 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 5.7409ms
+2025-11-16 15:59:30.858 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-16 15:59:30.885 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 27.1089ms
+2025-11-16 15:59:30.968 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/openapi/v1.json - null null
+2025-11-16 15:59:30.978 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 15:59:31.108 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 15:59:31.111 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/openapi/v1.json - 200 null application/json;charset=utf-8 143.5919ms
+2025-11-16 15:59:52.660 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5254/qoutes/price - application/json 40
+2025-11-16 15:59:52.666 +07:00 [INF] CORS policy execution successful.
+2025-11-16 15:59:52.669 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.qoutes.QouteController.CalculatePrice (MiniPricingApp)'
+2025-11-16 15:59:52.697 +07:00 [INF] Route matched with {action = "CalculatePrice", controller = "Qoute"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CalculatePrice(MiniPricingApp.Modules.Qoutes.Application.Dtos.PricingCalculationRequestDto) on controller MiniPricingApp.Modules.qoutes.QouteController (MiniPricingApp).
+2025-11-16 15:59:52.731 +07:00 [INF] RECIEVE CALCULATE PRICE REQUEST ==> MiniPricingApp.Modules.Qoutes.Application.Dtos.PricingCalculationRequestDto
+2025-11-16 16:00:03.303 +07:00 [INF] Executed action MiniPricingApp.Modules.qoutes.QouteController.CalculatePrice (MiniPricingApp) in 10594.5908ms
+2025-11-16 16:00:03.306 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.qoutes.QouteController.CalculatePrice (MiniPricingApp)'
+2025-11-16 16:00:03.328 +07:00 [ERR] An unhandled exception occurred
+System.Exception: Weight cannot be negative
+   at MiniPricingApp.Modules.qoutes.Domain.Entities.QouteEntity.validate() in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Modules\Qoutes\Domain\Entities\QouteEntity.cs:line 20
+   at MiniPricingApp.Modules.Qoutes.Domain.Validators.QouteWeightValidator.Validate(QouteEntity entity) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Modules\Qoutes\Domain\Validators\QouteWeightValidator.cs:line 18
+   at MiniPricingApp.Modules.Qoutes.Application.Services.QouteService.CalculatePrice(PricingCalculationRequestDto request) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Modules\Qoutes\Application\Services\QouteService.cs:line 43
+   at MiniPricingApp.Modules.qoutes.QouteController.CalculatePrice(PricingCalculationRequestDto request) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Modules\Qoutes\QouteController.cs:line 28
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MiniPricingApp.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Middleware\ExceptionMiddleware.cs:line 23
+2025-11-16 16:00:03.372 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5254/qoutes/price - 500 null application/json; charset=utf-8 10712.116ms
+2025-11-16 16:13:52.270 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 16:13:52.444 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 16:13:52.491 +07:00 [INF] Hosting environment: Development
+2025-11-16 16:13:52.494 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 16:14:17.438 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/swagger/index.html - null null
+2025-11-16 16:14:17.879 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/swagger/index.html - 200 null text/html;charset=utf-8 452.1225ms
+2025-11-16 16:14:17.893 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-16 16:14:17.901 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-16 16:14:17.912 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 11.4474ms
+2025-11-16 16:14:17.987 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 94.7721ms
+2025-11-16 16:14:18.324 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/openapi/v1.json - null null
+2025-11-16 16:14:18.408 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-16 16:14:18.417 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 16:14:18.708 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 16:14:18.712 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/openapi/v1.json - 200 null application/json;charset=utf-8 387.5336ms
+2025-11-16 16:14:36.603 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5254/qoutes/bulk - application/x-www-form-urlencoded 60310
+2025-11-16 16:14:36.635 +07:00 [INF] CORS policy execution successful.
+2025-11-16 16:14:36.638 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.qoutes.QouteController.BulkFile (MiniPricingApp)'
+2025-11-16 16:14:36.682 +07:00 [INF] Route matched with {action = "BulkFile", controller = "Qoute"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BulkFile(MiniPricingApp.Modules.Qoutes.Application.Dtos.UploadCsvFileRequestDto, System.Threading.Channels.Channel`1[MiniPricingApp.Modules.qoutes.Domain.Entities.JobEntity]) on controller MiniPricingApp.Modules.qoutes.QouteController (MiniPricingApp).
+2025-11-16 16:14:36.729 +07:00 [INF] Executed action MiniPricingApp.Modules.qoutes.QouteController.BulkFile (MiniPricingApp) in 39.1651ms
+2025-11-16 16:14:36.734 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.qoutes.QouteController.BulkFile (MiniPricingApp)'
+2025-11-16 16:14:36.791 +07:00 [ERR] An unhandled exception occurred
+System.ArgumentException: The key 'A4�_Y�rJƙ��L�G��"Y*/X�y�� �k�tx�f���]�Ź��]�����N��Q��ӳcPz�{�t	u�1|{��YK� ��[K����M�"g�3�.5-_��^/�mtz' is invalid JQuery syntax because it is missing a closing bracket. (Parameter 'key')
+   at Microsoft.AspNetCore.Mvc.ModelBinding.JQueryKeyValuePairNormalizer.NormalizeJQueryToMvc(StringBuilder builder, String key)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.JQueryKeyValuePairNormalizer.GetValues(IEnumerable`1 originalValues, Int32 valueCount)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.JQueryFormValueProviderFactory.AddValueProviderAsync(ValueProviderFactoryContext context)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.CompositeValueProvider.CreateAsync(ActionContext actionContext, IList`1 factories)
+   at Microsoft.AspNetCore.Mvc.ModelBinding.CompositeValueProvider.TryCreateAsync(ActionContext actionContext, IList`1 factories)
+   at Microsoft.AspNetCore.Mvc.Controllers.ControllerBinderDelegateProvider.<>c__DisplayClass0_0.<<CreateBinderDelegate>g__Bind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MiniPricingApp.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Middleware\ExceptionMiddleware.cs:line 23
+2025-11-16 16:14:36.838 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5254/qoutes/bulk - 400 null application/json; charset=utf-8 235.7582ms
+2025-11-16 16:14:51.713 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5254/qoutes/bulk - application/x-www-form-urlencoded 247
+2025-11-16 16:14:51.720 +07:00 [INF] CORS policy execution successful.
+2025-11-16 16:14:51.722 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.qoutes.QouteController.BulkFile (MiniPricingApp)'
+2025-11-16 16:14:51.725 +07:00 [INF] Route matched with {action = "BulkFile", controller = "Qoute"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BulkFile(MiniPricingApp.Modules.Qoutes.Application.Dtos.UploadCsvFileRequestDto, System.Threading.Channels.Channel`1[MiniPricingApp.Modules.qoutes.Domain.Entities.JobEntity]) on controller MiniPricingApp.Modules.qoutes.QouteController (MiniPricingApp).
+2025-11-16 16:14:51.773 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-16 16:14:51.806 +07:00 [INF] Executed action MiniPricingApp.Modules.qoutes.QouteController.BulkFile (MiniPricingApp) in 76.1828ms
+2025-11-16 16:14:51.810 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.qoutes.QouteController.BulkFile (MiniPricingApp)'
+2025-11-16 16:14:51.814 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5254/qoutes/bulk - 400 null application/problem+json; charset=utf-8 101.5297ms
+2025-11-16 16:15:07.710 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5254/qoutes/bulk - application/x-www-form-urlencoded 247
+2025-11-16 16:15:07.725 +07:00 [INF] CORS policy execution successful.
+2025-11-16 16:15:07.728 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.qoutes.QouteController.BulkFile (MiniPricingApp)'
+2025-11-16 16:15:07.729 +07:00 [INF] Route matched with {action = "BulkFile", controller = "Qoute"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BulkFile(MiniPricingApp.Modules.Qoutes.Application.Dtos.UploadCsvFileRequestDto, System.Threading.Channels.Channel`1[MiniPricingApp.Modules.qoutes.Domain.Entities.JobEntity]) on controller MiniPricingApp.Modules.qoutes.QouteController (MiniPricingApp).
+2025-11-16 16:15:07.742 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-16 16:15:07.747 +07:00 [INF] Executed action MiniPricingApp.Modules.qoutes.QouteController.BulkFile (MiniPricingApp) in 13.6667ms
+2025-11-16 16:15:07.750 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.qoutes.QouteController.BulkFile (MiniPricingApp)'
+2025-11-16 16:15:07.753 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5254/qoutes/bulk - 400 null application/problem+json; charset=utf-8 43.8325ms
+2025-11-16 16:15:12.589 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/swagger/index.html - null null
+2025-11-16 16:15:12.607 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/swagger/index.html - 200 null text/html;charset=utf-8 18.7377ms
+2025-11-16 16:15:12.653 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-16 16:15:12.656 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-16 16:15:12.662 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 8.985ms
+2025-11-16 16:15:12.745 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 89.1101ms
+2025-11-16 16:15:12.837 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/openapi/v1.json - null null
+2025-11-16 16:15:12.862 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 16:15:12.882 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 16:15:12.886 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/openapi/v1.json - 200 null application/json;charset=utf-8 49.3219ms
+2025-11-16 16:15:26.543 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5254/qoutes/bulk - application/x-www-form-urlencoded 247
+2025-11-16 16:15:26.552 +07:00 [INF] CORS policy execution successful.
+2025-11-16 16:15:26.555 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.qoutes.QouteController.BulkFile (MiniPricingApp)'
+2025-11-16 16:15:26.560 +07:00 [INF] Route matched with {action = "BulkFile", controller = "Qoute"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BulkFile(MiniPricingApp.Modules.Qoutes.Application.Dtos.UploadCsvFileRequestDto, System.Threading.Channels.Channel`1[MiniPricingApp.Modules.qoutes.Domain.Entities.JobEntity]) on controller MiniPricingApp.Modules.qoutes.QouteController (MiniPricingApp).
+2025-11-16 16:15:26.568 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-16 16:15:26.572 +07:00 [INF] Executed action MiniPricingApp.Modules.qoutes.QouteController.BulkFile (MiniPricingApp) in 5.3233ms
+2025-11-16 16:15:26.575 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.qoutes.QouteController.BulkFile (MiniPricingApp)'
+2025-11-16 16:15:26.579 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5254/qoutes/bulk - 400 null application/problem+json; charset=utf-8 35.5ms
+2025-11-16 16:16:23.533 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5254/qoutes/bulk - application/x-www-form-urlencoded 247
+2025-11-16 16:16:23.548 +07:00 [INF] CORS policy execution successful.
+2025-11-16 16:16:23.553 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.qoutes.QouteController.BulkFile (MiniPricingApp)'
+2025-11-16 16:16:23.559 +07:00 [INF] Route matched with {action = "BulkFile", controller = "Qoute"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BulkFile(MiniPricingApp.Modules.Qoutes.Application.Dtos.UploadCsvFileRequestDto, System.Threading.Channels.Channel`1[MiniPricingApp.Modules.qoutes.Domain.Entities.JobEntity]) on controller MiniPricingApp.Modules.qoutes.QouteController (MiniPricingApp).
+2025-11-16 16:16:27.733 +07:00 [INF] Executing BadRequestObjectResult, writing value of type 'Microsoft.AspNetCore.Mvc.ValidationProblemDetails'.
+2025-11-16 16:16:27.738 +07:00 [INF] Executed action MiniPricingApp.Modules.qoutes.QouteController.BulkFile (MiniPricingApp) in 4169.1717ms
+2025-11-16 16:16:27.742 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.qoutes.QouteController.BulkFile (MiniPricingApp)'
+2025-11-16 16:16:30.818 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5254/qoutes/bulk - 400 null application/problem+json; charset=utf-8 7285.8997ms
+2025-11-16 16:19:03.568 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 16:19:03.735 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 16:19:03.743 +07:00 [INF] Hosting environment: Development
+2025-11-16 16:19:03.745 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 16:19:16.448 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5254/qoutes/bulk - application/x-www-form-urlencoded 247
+2025-11-16 16:19:16.578 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-16 16:19:16.592 +07:00 [INF] CORS policy execution successful.
+2025-11-16 16:19:16.599 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.qoutes.QouteController.BulkFile (MiniPricingApp)'
+2025-11-16 16:19:16.647 +07:00 [INF] Route matched with {action = "BulkFile", controller = "Qoute"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BulkFile(MiniPricingApp.Modules.Qoutes.Application.Dtos.UploadCsvFileRequestDto) on controller MiniPricingApp.Modules.qoutes.QouteController (MiniPricingApp).
+2025-11-16 16:19:22.598 +07:00 [INF] RECIEVE BULK REQUEST ==> 
+2025-11-16 16:19:31.697 +07:00 [INF] Executed action MiniPricingApp.Modules.qoutes.QouteController.BulkFile (MiniPricingApp) in 15039.5499ms
+2025-11-16 16:19:31.704 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.qoutes.QouteController.BulkFile (MiniPricingApp)'
+2025-11-16 16:19:31.724 +07:00 [ERR] An unhandled exception occurred
+MiniPricingApp.Shares.Exceptions.FileException: File is empty.
+   at MiniPricingApp.Modules.Qoutes.Application.Services.QouteService.saveFromFile(IFormFile file) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Modules\Qoutes\Application\Services\QouteService.cs:line 101
+   at MiniPricingApp.Modules.qoutes.QouteController.BulkFile(UploadCsvFileRequestDto request) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Modules\Qoutes\QouteController.cs:line 36
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MiniPricingApp.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Middleware\ExceptionMiddleware.cs:line 23
+2025-11-16 16:19:31.781 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5254/qoutes/bulk - 400 null application/json; charset=utf-8 15340.4938ms
+2025-11-16 16:22:10.695 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 16:22:10.861 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 16:22:10.864 +07:00 [INF] Hosting environment: Development
+2025-11-16 16:22:10.866 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 16:22:16.371 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5254/qoutes/bulk - application/x-www-form-urlencoded 247
+2025-11-16 16:22:16.473 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-16 16:22:16.479 +07:00 [INF] CORS policy execution successful.
+2025-11-16 16:22:16.485 +07:00 [INF] Executing endpoint '415 HTTP Unsupported Media Type'
+2025-11-16 16:22:16.487 +07:00 [INF] Executed endpoint '415 HTTP Unsupported Media Type'
+2025-11-16 16:22:16.505 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5254/qoutes/bulk - 415 0 null 139.4531ms
+2025-11-16 16:22:20.217 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5254/qoutes/bulk - application/x-www-form-urlencoded 247
+2025-11-16 16:22:20.225 +07:00 [INF] CORS policy execution successful.
+2025-11-16 16:22:20.237 +07:00 [INF] Executing endpoint '415 HTTP Unsupported Media Type'
+2025-11-16 16:22:20.238 +07:00 [INF] Executed endpoint '415 HTTP Unsupported Media Type'
+2025-11-16 16:22:20.241 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5254/qoutes/bulk - 415 0 null 24.4164ms
+2025-11-16 16:22:21.110 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5254/qoutes/bulk - application/x-www-form-urlencoded 247
+2025-11-16 16:22:21.137 +07:00 [INF] CORS policy execution successful.
+2025-11-16 16:22:21.141 +07:00 [INF] Executing endpoint '415 HTTP Unsupported Media Type'
+2025-11-16 16:22:21.144 +07:00 [INF] Executed endpoint '415 HTTP Unsupported Media Type'
+2025-11-16 16:22:21.149 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5254/qoutes/bulk - 415 0 null 39.2079ms
+2025-11-16 16:22:30.315 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/swagger/index.html - null null
+2025-11-16 16:22:30.590 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/swagger/index.html - 200 null text/html;charset=utf-8 274.7043ms
+2025-11-16 16:22:30.621 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-16 16:22:30.625 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-16 16:22:30.630 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 9.2757ms
+2025-11-16 16:22:30.673 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.276ms
+2025-11-16 16:22:31.029 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/openapi/v1.json - null null
+2025-11-16 16:22:31.086 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 16:22:31.309 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 16:22:31.312 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/openapi/v1.json - 200 null application/json;charset=utf-8 282.5761ms
+2025-11-16 16:22:41.093 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5254/qoutes/bulk - multipart/form-data; boundary=----WebKitFormBoundaryeFY2BAqQhx98vNBC 247
+2025-11-16 16:22:41.111 +07:00 [INF] CORS policy execution successful.
+2025-11-16 16:22:41.113 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.qoutes.QouteController.BulkFile (MiniPricingApp)'
+2025-11-16 16:22:41.154 +07:00 [INF] Route matched with {action = "BulkFile", controller = "Qoute"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] BulkFile(MiniPricingApp.Modules.Qoutes.Application.Dtos.UploadCsvFileRequestDto) on controller MiniPricingApp.Modules.qoutes.QouteController (MiniPricingApp).
+2025-11-16 16:22:41.211 +07:00 [INF] RECIEVE BULK REQUEST ==> Microsoft.AspNetCore.Http.FormFile
+2025-11-16 16:22:41.320 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Guid, System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-16 16:22:41.335 +07:00 [INF] Executed action MiniPricingApp.Modules.qoutes.QouteController.BulkFile (MiniPricingApp) in 171.2908ms
+2025-11-16 16:22:41.338 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.qoutes.QouteController.BulkFile (MiniPricingApp)'
+2025-11-16 16:22:41.342 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5254/qoutes/bulk - 200 null application/json; charset=utf-8 249.5322ms
+2025-11-16 16:23:04.328 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5254/jobs/2c4b0fc4-a5ab-46c0-a46d-4570a8a99282 - null 0
+2025-11-16 16:23:04.363 +07:00 [INF] CORS policy execution successful.
+2025-11-16 16:23:04.364 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.qoutes.QouteController.GetJobById (MiniPricingApp)'
+2025-11-16 16:23:04.373 +07:00 [INF] Route matched with {action = "GetJobById", controller = "Qoute"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetJobById(System.Guid) on controller MiniPricingApp.Modules.qoutes.QouteController (MiniPricingApp).
+2025-11-16 16:23:04.377 +07:00 [INF] RECIEVE QOURY PARAM TO GET JOB ==> 2c4b0fc4-a5ab-46c0-a46d-4570a8a99282
+2025-11-16 16:23:04.383 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[MiniPricingApp.Modules.qoutes.Domain.Entities.JobEntity, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-16 16:23:04.395 +07:00 [INF] Executed action MiniPricingApp.Modules.qoutes.QouteController.GetJobById (MiniPricingApp) in 20.0774ms
+2025-11-16 16:23:04.398 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.qoutes.QouteController.GetJobById (MiniPricingApp)'
+2025-11-16 16:23:04.404 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5254/jobs/2c4b0fc4-a5ab-46c0-a46d-4570a8a99282 - 200 null application/json; charset=utf-8 75.8435ms
+2025-11-16 21:07:49.586 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 21:07:49.668 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 21:07:49.669 +07:00 [INF] Hosting environment: Development
+2025-11-16 21:07:49.669 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 21:07:52.290 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-16 21:07:52.326 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 49.7942ms
+2025-11-16 21:07:52.412 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-16 21:07:52.576 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 164.6921ms
+2025-11-16 21:07:52.610 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/swagger/v1/swagger.json - null null
+2025-11-16 21:07:52.678 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-16 21:07:52.685 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/swagger/v1/swagger.json - 404 0 null 74.7698ms
+2025-11-16 21:07:52.693 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5254/swagger/v1/swagger.json, Response status code: 404
+2025-11-16 21:07:58.166 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-16 21:07:58.171 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 5.049ms
+2025-11-16 21:07:58.214 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-16 21:07:58.229 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 14.7651ms
+2025-11-16 21:07:58.299 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/openapi/v1.json - null null
+2025-11-16 21:07:58.308 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 21:07:58.424 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 21:07:58.427 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/openapi/v1.json - 200 null application/json;charset=utf-8 128.08ms
+2025-11-16 21:14:12.646 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 21:14:12.783 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 21:14:12.787 +07:00 [INF] Hosting environment: Development
+2025-11-16 21:14:12.790 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 21:14:20.717 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/swagger/index.html - null null
+2025-11-16 21:14:21.059 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/swagger/index.html - 200 null text/html;charset=utf-8 345.6697ms
+2025-11-16 21:14:21.068 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-16 21:14:21.070 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-16 21:14:21.075 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 7.7846ms
+2025-11-16 21:14:21.122 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 52.3742ms
+2025-11-16 21:14:21.320 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/openapi/v1.json - null null
+2025-11-16 21:14:21.356 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-16 21:14:21.367 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 21:14:21.528 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 21:14:21.531 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/openapi/v1.json - 200 null application/json;charset=utf-8 211.3583ms
+2025-11-16 21:21:11.376 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 21:21:11.485 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 21:21:11.489 +07:00 [INF] Hosting environment: Development
+2025-11-16 21:21:11.493 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 21:21:23.242 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/swagger/index.html - null null
+2025-11-16 21:21:23.668 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/swagger/index.html - 200 null text/html;charset=utf-8 434.1196ms
+2025-11-16 21:21:23.696 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-16 21:21:23.703 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 8.3581ms
+2025-11-16 21:21:23.824 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-16 21:21:23.892 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 68.5262ms
+2025-11-16 21:21:23.950 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/openapi/v1.json - null null
+2025-11-16 21:21:23.985 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-16 21:21:23.992 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 21:21:24.240 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 21:21:24.243 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/openapi/v1.json - 200 null application/json;charset=utf-8 293.2216ms
+2025-11-16 21:28:29.964 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 21:28:30.114 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 21:28:30.117 +07:00 [INF] Hosting environment: Development
+2025-11-16 21:28:30.119 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 21:28:47.156 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/swagger/index.html - null null
+2025-11-16 21:28:47.734 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/swagger/index.html - 200 null text/html;charset=utf-8 590.1057ms
+2025-11-16 21:28:47.749 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-16 21:28:47.752 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-16 21:28:47.758 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 9.1284ms
+2025-11-16 21:28:47.801 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 48.5256ms
+2025-11-16 21:28:48.010 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/openapi/v1.json - null null
+2025-11-16 21:28:48.057 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-16 21:28:48.068 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 21:28:48.472 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 21:28:48.477 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/openapi/v1.json - 200 null application/json;charset=utf-8 466.3992ms
+2025-11-16 21:30:30.558 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 21:30:30.707 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 21:30:30.711 +07:00 [INF] Hosting environment: Development
+2025-11-16 21:30:30.714 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 21:48:51.826 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 21:48:51.932 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 21:48:51.939 +07:00 [INF] Hosting environment: Development
+2025-11-16 21:48:51.943 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 21:50:58.221 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 21:50:58.354 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 21:50:58.359 +07:00 [INF] Hosting environment: Development
+2025-11-16 21:50:58.362 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 21:51:32.059 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/redoc/v1 - null null
+2025-11-16 21:51:32.574 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-16 21:51:32.620 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/redoc/v1 - 404 0 null 576.6512ms
+2025-11-16 21:51:32.640 +07:00 [INF] Request reached the end of the middleware pipeline without being handled by application code. Request path: GET http://localhost:5254/redoc/v1, Response status code: 404
+2025-11-16 21:51:59.025 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-16 21:51:59.041 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 16.7915ms
+2025-11-16 21:51:59.157 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-16 21:51:59.207 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 49.7299ms
+2025-11-16 21:51:59.240 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/openapi/v1.json - null null
+2025-11-16 21:51:59.260 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 21:51:59.596 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 21:51:59.600 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/openapi/v1.json - 200 null application/json;charset=utf-8 359.5795ms
+2025-11-16 21:52:07.578 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-16 21:52:07.586 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 7.8098ms
+2025-11-16 21:52:07.630 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-16 21:52:07.654 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 24.4514ms
+2025-11-16 21:52:07.679 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/openapi/v1.json - null null
+2025-11-16 21:52:07.685 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 21:52:07.686 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:07.690 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:07.691 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 21:52:07.691 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:07.693 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/openapi/v1.json - 200 null application/json;charset=utf-8 13.6799ms
+2025-11-16 21:52:07.694 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 8.6929ms
+2025-11-16 21:52:09.830 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:09.845 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:09.849 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:09.852 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 22.8622ms
+2025-11-16 21:52:11.078 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:11.085 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:11.088 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:11.089 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 11.3218ms
+2025-11-16 21:52:12.230 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:12.237 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:12.240 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:12.243 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 13.0681ms
+2025-11-16 21:52:12.343 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:12.368 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:12.376 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:12.381 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 38.1598ms
+2025-11-16 21:52:13.418 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:13.421 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:13.422 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:13.423 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 5.0812ms
+2025-11-16 21:52:13.709 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:13.715 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:13.723 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:13.730 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 21.8374ms
+2025-11-16 21:52:13.811 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:13.817 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:13.823 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:13.828 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 16.3454ms
+2025-11-16 21:52:14.099 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:14.102 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:14.103 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:14.105 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 5.3021ms
+2025-11-16 21:52:14.203 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:14.208 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:14.209 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:14.212 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 8.1809ms
+2025-11-16 21:52:14.523 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:14.543 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:14.550 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:14.557 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 33.3154ms
+2025-11-16 21:52:15.316 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:15.319 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:15.320 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:15.323 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 7.0611ms
+2025-11-16 21:52:17.443 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:17.457 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:17.464 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:17.468 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 25.4215ms
+2025-11-16 21:52:19.261 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:19.264 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:19.265 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:19.266 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 5.2066ms
+2025-11-16 21:52:19.746 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:19.752 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:19.754 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:19.756 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 9.7407ms
+2025-11-16 21:52:20.255 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:20.269 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:20.273 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:20.276 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 20.396ms
+2025-11-16 21:52:20.646 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:20.653 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:20.656 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:20.657 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 10.805ms
+2025-11-16 21:52:24.700 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:24.719 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:24.723 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:24.731 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 31.6599ms
+2025-11-16 21:52:25.209 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:25.211 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:25.213 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:25.214 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 5.2693ms
+2025-11-16 21:52:25.594 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:25.621 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:25.625 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:25.629 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 35.2005ms
+2025-11-16 21:52:25.709 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:25.728 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:25.735 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:25.743 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 33.3153ms
+2025-11-16 21:52:26.102 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:26.107 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:26.110 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:26.114 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 12.3447ms
+2025-11-16 21:52:26.834 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:26.844 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:26.850 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:26.857 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 23.2783ms
+2025-11-16 21:52:26.933 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:26.937 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:26.939 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:26.941 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 8.3207ms
+2025-11-16 21:52:27.155 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:27.159 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:27.163 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:27.169 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 13.8303ms
+2025-11-16 21:52:27.297 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:27.313 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:27.324 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:27.331 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 34.6348ms
+2025-11-16 21:52:27.577 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:27.584 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:27.589 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:27.593 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 16.7269ms
+2025-11-16 21:52:27.881 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:27.887 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:27.889 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:27.892 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 10.9822ms
+2025-11-16 21:52:27.980 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:27.985 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:27.989 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:27.990 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 9.7062ms
+2025-11-16 21:52:29.121 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:29.136 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:29.140 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:29.145 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 23.693ms
+2025-11-16 21:52:29.220 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:29.222 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:29.224 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:29.225 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 4.9696ms
+2025-11-16 21:52:29.521 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/favicon.ico - null null
+2025-11-16 21:52:29.525 +07:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:29.528 +07:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2025-11-16 21:52:29.531 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/favicon.ico - 405 0 null 10.0663ms
+2025-11-16 21:53:20.685 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 21:53:20.818 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 21:53:20.823 +07:00 [INF] Hosting environment: Development
+2025-11-16 21:53:20.826 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 21:53:31.690 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/swagger/index.html - null null
+2025-11-16 21:53:32.204 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/swagger/index.html - 200 null text/html;charset=utf-8 523.6982ms
+2025-11-16 21:53:32.224 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-16 21:53:32.234 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 10.9246ms
+2025-11-16 21:53:32.357 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-16 21:53:32.442 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 84.5077ms
+2025-11-16 21:53:32.479 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/openapi/v1.json - null null
+2025-11-16 21:53:32.516 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-16 21:53:32.525 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 21:53:32.791 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 21:53:32.794 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/openapi/v1.json - 200 null application/json;charset=utf-8 315.1286ms
+2025-11-16 21:55:48.479 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 21:55:48.614 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 21:55:48.616 +07:00 [INF] Hosting environment: Development
+2025-11-16 21:55:48.619 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 21:55:52.647 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/swagger/index.html - null null
+2025-11-16 21:55:53.086 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/swagger/index.html - 200 null text/html;charset=utf-8 447.9387ms
+2025-11-16 21:55:53.199 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-16 21:55:53.199 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-16 21:55:53.213 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 15.4675ms
+2025-11-16 21:55:53.257 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 59.0251ms
+2025-11-16 21:55:53.278 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/openapi/v1.json - null null
+2025-11-16 21:55:53.324 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-16 21:55:53.333 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 21:55:53.609 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 21:55:53.616 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/openapi/v1.json - 200 null application/json;charset=utf-8 338.0266ms
+2025-11-16 22:02:17.679 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 22:02:17.824 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 22:02:17.828 +07:00 [INF] Hosting environment: Development
+2025-11-16 22:02:17.832 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 22:02:27.612 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/swagger/index.html - null null
+2025-11-16 22:02:28.019 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/swagger/index.html - 200 null text/html;charset=utf-8 414.4245ms
+2025-11-16 22:02:28.026 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-16 22:02:28.030 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-16 22:02:28.036 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 11.3027ms
+2025-11-16 22:02:28.084 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 53.6229ms
+2025-11-16 22:02:28.291 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/openapi/v1.json - null null
+2025-11-16 22:02:28.330 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-16 22:02:28.336 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 22:02:28.566 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 22:02:28.568 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/openapi/v1.json - 200 null application/json;charset=utf-8 276.8602ms
+2025-11-16 22:12:14.547 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 22:12:14.740 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 22:12:14.744 +07:00 [INF] Hosting environment: Development
+2025-11-16 22:12:14.748 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 22:12:21.327 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/swagger/index.html - null null
+2025-11-16 22:12:21.722 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/swagger/index.html - 200 null text/html;charset=utf-8 404.6649ms
+2025-11-16 22:12:21.734 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-16 22:12:21.744 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 10.5653ms
+2025-11-16 22:12:21.860 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-16 22:12:21.930 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 69.4844ms
+2025-11-16 22:12:21.976 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/openapi/v1.json - null null
+2025-11-16 22:12:22.010 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-16 22:12:22.020 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 22:12:22.301 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 22:12:22.304 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/openapi/v1.json - 200 null application/json;charset=utf-8 327.5838ms
+2025-11-16 22:12:33.301 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-16 22:12:33.309 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-16 22:12:33.352 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-16 22:12:33.381 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-16 22:12:33.441 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-16 22:12:33.484 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 118.008ms
+2025-11-16 22:12:33.486 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-16 22:12:33.489 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 187.6802ms
+2025-11-16 22:21:49.719 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 22:21:49.915 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 22:21:49.918 +07:00 [INF] Hosting environment: Development
+2025-11-16 22:21:49.921 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 22:21:59.418 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/swagger/index.html - null null
+2025-11-16 22:21:59.905 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/swagger/index.html - 200 null text/html;charset=utf-8 498.2312ms
+2025-11-16 22:22:00.157 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-16 22:22:00.157 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-16 22:22:00.171 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 14.6926ms
+2025-11-16 22:22:00.230 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 74.3094ms
+2025-11-16 22:22:00.265 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/openapi/v1.json - null null
+2025-11-16 22:22:00.302 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-16 22:22:00.310 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 22:22:00.527 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 22:22:00.529 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/openapi/v1.json - 200 null application/json;charset=utf-8 264.1935ms
+2025-11-16 22:29:43.509 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 22:29:43.704 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 22:29:43.706 +07:00 [INF] Hosting environment: Development
+2025-11-16 22:29:43.707 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 22:29:46.734 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/swagger/index.html - null null
+2025-11-16 22:29:47.236 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/swagger/index.html - 200 null text/html;charset=utf-8 506.7269ms
+2025-11-16 22:29:47.296 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-16 22:29:47.296 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-16 22:29:47.304 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 53.8523ms
+2025-11-16 22:29:47.338 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 41.3055ms
+2025-11-16 22:29:47.522 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/openapi/v1.json - null null
+2025-11-16 22:29:47.560 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-16 22:29:47.568 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 22:29:47.793 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 22:29:47.797 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/openapi/v1.json - 200 null application/json;charset=utf-8 274.9387ms
+2025-11-16 22:32:28.907 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 22:32:29.042 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 22:32:29.044 +07:00 [INF] Hosting environment: Development
+2025-11-16 22:32:29.046 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 22:32:32.619 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/swagger/index.html - null null
+2025-11-16 22:32:33.080 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/swagger/index.html - 200 null text/html;charset=utf-8 469.321ms
+2025-11-16 22:32:33.089 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-16 22:32:33.100 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-16 22:32:33.107 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 19.5874ms
+2025-11-16 22:32:33.150 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 50.7567ms
+2025-11-16 22:32:33.205 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/openapi/v1.json - null null
+2025-11-16 22:32:33.245 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-16 22:32:33.254 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 22:32:33.572 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 22:32:33.577 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/openapi/v1.json - 200 null application/json;charset=utf-8 371.9667ms
+2025-11-16 22:43:06.287 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 22:43:06.425 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 22:43:06.430 +07:00 [INF] Hosting environment: Development
+2025-11-16 22:43:06.435 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 22:43:16.517 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/swagger/index.html - null null
+2025-11-16 22:43:16.897 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/swagger/index.html - 200 null text/html;charset=utf-8 389.7404ms
+2025-11-16 22:43:16.911 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-16 22:43:16.911 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-16 22:43:16.921 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 10.9333ms
+2025-11-16 22:43:16.975 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 64.2229ms
+2025-11-16 22:43:17.163 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/openapi/v1.json - null null
+2025-11-16 22:43:17.206 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-16 22:43:17.217 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 22:43:17.443 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 22:43:17.446 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/openapi/v1.json - 200 null application/json;charset=utf-8 283.1631ms
+2025-11-16 22:43:24.863 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-16 22:43:24.881 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-16 22:43:24.923 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-16 22:43:24.937 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-16 22:43:24.967 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-16 22:43:25.006 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 72.0506ms
+2025-11-16 22:43:25.011 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-16 22:43:25.015 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 151.5662ms
+2025-11-16 22:43:34.675 +07:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5254/2a6db60e-dc50-4734-80e8-b2968ddf2606 - null null
+2025-11-16 22:43:34.683 +07:00 [INF] CORS policy execution successful.
+2025-11-16 22:43:34.686 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.Delete (MiniPricingApp)'
+2025-11-16 22:43:34.698 +07:00 [INF] Route matched with {action = "Delete", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Guid) on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-16 22:43:34.714 +07:00 [INF] RECIEVE QOERY TO GET RULE BY ID ==> 2a6db60e-dc50-4734-80e8-b2968ddf2606
+2025-11-16 22:43:34.753 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[MiniPricingApp.Shares.Common.CreateAndUpdateResponse, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-16 22:43:34.764 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.Delete (MiniPricingApp) in 61.1116ms
+2025-11-16 22:43:34.767 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.Delete (MiniPricingApp)'
+2025-11-16 22:43:34.770 +07:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5254/2a6db60e-dc50-4734-80e8-b2968ddf2606 - 200 null application/json; charset=utf-8 95.9297ms
+2025-11-16 22:43:44.514 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-16 22:43:44.518 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-16 22:43:44.520 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-16 22:43:44.527 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-16 22:43:44.530 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-16 22:43:44.533 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 9.5692ms
+2025-11-16 22:43:44.535 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-16 22:43:44.538 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 24.0203ms
+2025-11-16 22:43:56.735 +07:00 [INF] Request starting HTTP/1.1 DELETE http://localhost:5254/67c38cef-2278-49e5-813a-aa102636caf4 - null null
+2025-11-16 22:43:56.740 +07:00 [INF] CORS policy execution successful.
+2025-11-16 22:43:56.742 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.Delete (MiniPricingApp)'
+2025-11-16 22:43:56.744 +07:00 [INF] Route matched with {action = "Delete", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] Delete(System.Guid) on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-16 22:43:56.747 +07:00 [INF] RECIEVE QOERY TO GET RULE BY ID ==> 67c38cef-2278-49e5-813a-aa102636caf4
+2025-11-16 22:43:56.787 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[MiniPricingApp.Shares.Common.CreateAndUpdateResponse, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-16 22:43:56.790 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.Delete (MiniPricingApp) in 43.6675ms
+2025-11-16 22:43:56.792 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.Delete (MiniPricingApp)'
+2025-11-16 22:43:56.794 +07:00 [INF] Request finished HTTP/1.1 DELETE http://localhost:5254/67c38cef-2278-49e5-813a-aa102636caf4 - 200 null application/json; charset=utf-8 58.9701ms
+2025-11-16 22:43:59.725 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-16 22:43:59.736 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-16 22:43:59.738 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-16 22:43:59.742 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-16 22:43:59.744 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-16 22:43:59.747 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 5.5657ms
+2025-11-16 22:43:59.750 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-16 22:43:59.752 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 27.4639ms
+2025-11-16 22:48:36.808 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 22:48:36.936 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 22:48:36.940 +07:00 [INF] Hosting environment: Development
+2025-11-16 22:48:36.944 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 22:49:15.846 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5254/rules - application/json 266
+2025-11-16 22:49:15.968 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-16 22:49:15.975 +07:00 [INF] CORS policy execution successful.
+2025-11-16 22:49:15.985 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.CreateRule (MiniPricingApp)'
+2025-11-16 22:49:16.030 +07:00 [INF] Route matched with {action = "CreateRule", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateRule(MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleRequestDto) on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-16 22:49:16.116 +07:00 [INF] RECIEVE REQUEST TO CREATE RULE ==> MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleRequestDto
+2025-11-16 22:49:27.182 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.CreateRule (MiniPricingApp) in 11135.2421ms
+2025-11-16 22:49:27.192 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.CreateRule (MiniPricingApp)'
+2025-11-16 22:49:27.206 +07:00 [ERR] An unhandled exception occurred
+System.ArgumentException: Unsupported rule type: WeightTier 
+   at MiniPricingApp.Modules.Rules.Domains.Factory.PricingRuleFactory.Create(PricingRuleRequestDto dto) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Modules\Rules\Domains\Factory\PricingRuleFactory.cs:line 70
+   at MiniPricingApp.Modules.Rules.Application.Services.RuleService.CreateRule(PricingRuleRequestDto request) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Modules\Rules\Application\Services\RuleService.cs:line 48
+   at MiniPricingApp.Modules.Rules.RuleController.CreateRule(PricingRuleRequestDto request) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Modules\Rules\RuleController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MiniPricingApp.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Middleware\ExceptionMiddleware.cs:line 23
+2025-11-16 22:49:27.239 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5254/rules - 400 null application/json; charset=utf-8 11400.7153ms
+2025-11-16 22:49:35.694 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5254/rules - application/json 265
+2025-11-16 22:49:35.703 +07:00 [INF] CORS policy execution successful.
+2025-11-16 22:49:35.706 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.CreateRule (MiniPricingApp)'
+2025-11-16 22:49:35.709 +07:00 [INF] Route matched with {action = "CreateRule", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateRule(MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleRequestDto) on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-16 22:49:35.714 +07:00 [INF] RECIEVE REQUEST TO CREATE RULE ==> MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleRequestDto
+2025-11-16 22:49:46.021 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.CreateRule (MiniPricingApp) in 10307.9792ms
+2025-11-16 22:49:46.024 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.CreateRule (MiniPricingApp)'
+2025-11-16 22:49:46.040 +07:00 [ERR] An unhandled exception occurred
+System.InvalidOperationException: Sequence contains no elements
+   at System.Linq.ThrowHelper.ThrowNoElementsException()
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at MiniPricingApp.Modules.Rules.Infrastructure.Implementations.PricingRuleRepository.findLastMaxWeightTier() in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Modules\Rules\Infrastructure\Implementations\PricingRuleRepository.cs:line 81
+   at MiniPricingApp.Modules.Rules.Domains.Services.WeightTierDomainService.GetNextMinWeight() in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Modules\Rules\Domains\Services\WeightTierDomainService.cs:line 31
+   at MiniPricingApp.Modules.Rules.Domains.Factory.PricingRuleFactory.Create(PricingRuleRequestDto dto) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Modules\Rules\Domains\Factory\PricingRuleFactory.cs:line 45
+   at MiniPricingApp.Modules.Rules.Application.Services.RuleService.CreateRule(PricingRuleRequestDto request) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Modules\Rules\Application\Services\RuleService.cs:line 48
+   at MiniPricingApp.Modules.Rules.RuleController.CreateRule(PricingRuleRequestDto request) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Modules\Rules\RuleController.cs:line 38
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfIActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MiniPricingApp.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Middleware\ExceptionMiddleware.cs:line 23
+2025-11-16 22:49:46.056 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5254/rules - 500 null application/json; charset=utf-8 10363.3251ms
+2025-11-16 22:50:18.962 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5254/rules - application/json 265
+2025-11-16 22:50:18.970 +07:00 [INF] CORS policy execution successful.
+2025-11-16 22:50:18.972 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.CreateRule (MiniPricingApp)'
+2025-11-16 22:50:18.975 +07:00 [INF] Route matched with {action = "CreateRule", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateRule(MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleRequestDto) on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-16 22:50:18.986 +07:00 [INF] RECIEVE REQUEST TO CREATE RULE ==> MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleRequestDto
+2025-11-16 22:51:14.551 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 22:51:14.720 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 22:51:14.727 +07:00 [INF] Hosting environment: Development
+2025-11-16 22:51:14.734 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 22:51:22.018 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5254/rules - application/json 265
+2025-11-16 22:51:22.101 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-16 22:51:22.107 +07:00 [INF] CORS policy execution successful.
+2025-11-16 22:51:22.112 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.CreateRule (MiniPricingApp)'
+2025-11-16 22:51:22.142 +07:00 [INF] Route matched with {action = "CreateRule", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] CreateRule(MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleRequestDto) on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-16 22:51:22.261 +07:00 [INF] RECIEVE REQUEST TO CREATE RULE ==> MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleRequestDto
+2025-11-16 22:51:22.336 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[MiniPricingApp.Shares.Common.CreateAndUpdateResponse, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-16 22:51:22.367 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.CreateRule (MiniPricingApp) in 217.2315ms
+2025-11-16 22:51:22.374 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.CreateRule (MiniPricingApp)'
+2025-11-16 22:51:22.384 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5254/rules - 200 null application/json; charset=utf-8 377.6266ms
+2025-11-16 22:51:47.998 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-16 22:51:48.024 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-16 22:51:48.035 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-16 22:51:48.039 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-16 22:51:48.047 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-16 22:51:48.073 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 34.2561ms
+2025-11-16 22:51:48.078 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-16 22:51:48.080 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 83.495ms
+2025-11-16 22:52:04.769 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5254/qoutes/price - application/json 39
+2025-11-16 22:52:04.781 +07:00 [INF] CORS policy execution successful.
+2025-11-16 22:52:04.783 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.qoutes.QouteController.CalculatePrice (MiniPricingApp)'
+2025-11-16 22:52:04.787 +07:00 [INF] Route matched with {action = "CalculatePrice", controller = "Qoute"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CalculatePrice(MiniPricingApp.Modules.Qoutes.Application.Dtos.PricingCalculationRequestDto) on controller MiniPricingApp.Modules.qoutes.QouteController (MiniPricingApp).
+2025-11-16 22:52:04.795 +07:00 [INF] RECIEVE CALCULATE PRICE REQUEST ==> MiniPricingApp.Modules.Qoutes.Application.Dtos.PricingCalculationRequestDto
+2025-11-16 22:52:11.643 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[MiniPricingApp.Modules.Qoutes.Application.Dtos.PricingCalculationResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]'.
+2025-11-16 22:52:11.651 +07:00 [INF] Executed action MiniPricingApp.Modules.qoutes.QouteController.CalculatePrice (MiniPricingApp) in 6862.1013ms
+2025-11-16 22:52:11.655 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.qoutes.QouteController.CalculatePrice (MiniPricingApp)'
+2025-11-16 22:52:11.658 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5254/qoutes/price - 200 null application/json; charset=utf-8 6888.5949ms
+2025-11-16 22:52:21.000 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5254/qoutes/price - application/json 41
+2025-11-16 22:52:21.017 +07:00 [INF] CORS policy execution successful.
+2025-11-16 22:52:21.022 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.qoutes.QouteController.CalculatePrice (MiniPricingApp)'
+2025-11-16 22:52:21.025 +07:00 [INF] Route matched with {action = "CalculatePrice", controller = "Qoute"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CalculatePrice(MiniPricingApp.Modules.Qoutes.Application.Dtos.PricingCalculationRequestDto) on controller MiniPricingApp.Modules.qoutes.QouteController (MiniPricingApp).
+2025-11-16 22:52:21.032 +07:00 [INF] RECIEVE CALCULATE PRICE REQUEST ==> MiniPricingApp.Modules.Qoutes.Application.Dtos.PricingCalculationRequestDto
+2025-11-16 22:52:27.394 +07:00 [INF] Executed action MiniPricingApp.Modules.qoutes.QouteController.CalculatePrice (MiniPricingApp) in 6363.1453ms
+2025-11-16 22:52:27.396 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.qoutes.QouteController.CalculatePrice (MiniPricingApp)'
+2025-11-16 22:52:27.410 +07:00 [ERR] An unhandled exception occurred
+System.Exception: Weight 100 does not match any WeightTier rule.
+   at MiniPricingApp.Modules.Qoutes.Domain.Validators.QouteWeightValidator.Validate(QouteEntity entity) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Modules\Qoutes\Domain\Validators\QouteWeightValidator.cs:line 50
+   at MiniPricingApp.Modules.Qoutes.Application.Services.QouteService.CalculatePrice(PricingCalculationRequestDto request) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Modules\Qoutes\Application\Services\QouteService.cs:line 64
+   at MiniPricingApp.Modules.qoutes.QouteController.CalculatePrice(PricingCalculationRequestDto request) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Modules\Qoutes\QouteController.cs:line 33
+   at lambda_method19(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MiniPricingApp.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Middleware\ExceptionMiddleware.cs:line 23
+2025-11-16 22:52:27.452 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5254/qoutes/price - 500 null application/json; charset=utf-8 6451.4705ms
+2025-11-16 22:53:36.041 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 22:53:36.170 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 22:53:36.171 +07:00 [INF] Hosting environment: Development
+2025-11-16 22:53:36.173 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 22:53:53.022 +07:00 [INF] Request starting HTTP/1.1 POST http://localhost:5254/qoutes/price - application/json 41
+2025-11-16 22:53:53.131 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-16 22:53:53.139 +07:00 [INF] CORS policy execution successful.
+2025-11-16 22:53:53.145 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.qoutes.QouteController.CalculatePrice (MiniPricingApp)'
+2025-11-16 22:53:53.186 +07:00 [INF] Route matched with {action = "CalculatePrice", controller = "Qoute"}. Executing controller action with signature Microsoft.AspNetCore.Mvc.IActionResult CalculatePrice(MiniPricingApp.Modules.Qoutes.Application.Dtos.PricingCalculationRequestDto) on controller MiniPricingApp.Modules.qoutes.QouteController (MiniPricingApp).
+2025-11-16 22:53:53.244 +07:00 [INF] RECIEVE CALCULATE PRICE REQUEST ==> MiniPricingApp.Modules.Qoutes.Application.Dtos.PricingCalculationRequestDto
+2025-11-16 22:53:55.374 +07:00 [INF] Executed action MiniPricingApp.Modules.qoutes.QouteController.CalculatePrice (MiniPricingApp) in 2178.0167ms
+2025-11-16 22:53:55.380 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.qoutes.QouteController.CalculatePrice (MiniPricingApp)'
+2025-11-16 22:53:55.394 +07:00 [ERR] An unhandled exception occurred
+System.Exception: Weight 100 does not match any WeightTier rule.
+   at MiniPricingApp.Modules.Qoutes.Domain.Validators.QouteWeightValidator.Validate(QouteEntity entity) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Modules\Qoutes\Domain\Validators\QouteWeightValidator.cs:line 50
+   at MiniPricingApp.Modules.Qoutes.Application.Services.QouteService.CalculatePrice(PricingCalculationRequestDto request) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Modules\Qoutes\Application\Services\QouteService.cs:line 64
+   at MiniPricingApp.Modules.qoutes.QouteController.CalculatePrice(PricingCalculationRequestDto request) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Modules\Qoutes\QouteController.cs:line 33
+   at lambda_method2(Closure, Object, Object[])
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.SyncActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeActionMethodAsync()
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeNextActionFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|7_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at MiniPricingApp.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context) in C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp\Middleware\ExceptionMiddleware.cs:line 23
+2025-11-16 22:53:55.439 +07:00 [INF] Request finished HTTP/1.1 POST http://localhost:5254/qoutes/price - 500 null application/json; charset=utf-8 2437.0421ms
+2025-11-16 22:56:22.928 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 22:56:23.084 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 22:56:23.087 +07:00 [INF] Hosting environment: Development
+2025-11-16 22:56:23.089 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 22:56:26.400 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/swagger/index.html - null null
+2025-11-16 22:56:26.770 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/swagger/index.html - 200 null text/html;charset=utf-8 376.6062ms
+2025-11-16 22:56:26.784 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-16 22:56:26.792 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 9.3958ms
+2025-11-16 22:56:26.912 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-16 22:56:26.956 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 43.8876ms
+2025-11-16 22:56:27.030 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/openapi/v1.json - null null
+2025-11-16 22:56:27.065 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-16 22:56:27.074 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 22:56:27.266 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 22:56:27.276 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/openapi/v1.json - 200 null application/json;charset=utf-8 245.722ms
+2025-11-16 23:07:17.216 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-16 23:07:17.320 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-16 23:07:17.322 +07:00 [INF] Hosting environment: Development
+2025-11-16 23:07:17.324 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-16 23:07:23.822 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/swagger/index.html - null null
+2025-11-16 23:07:24.161 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/swagger/index.html - 200 null text/html;charset=utf-8 344.7417ms
+2025-11-16 23:07:24.177 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-16 23:07:24.189 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 13.4734ms
+2025-11-16 23:07:24.311 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-16 23:07:24.356 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 45.3401ms
+2025-11-16 23:07:24.436 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/openapi/v1.json - null null
+2025-11-16 23:07:24.481 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-16 23:07:24.488 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 23:07:24.669 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-16 23:07:24.672 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/openapi/v1.json - 200 null application/json;charset=utf-8 237.4612ms

@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MiniPricingApp</name>
+    </assembly>
+    <members>
+        <member name="T:MiniPricingApp.Modules.Qoutes.Application.Services.QouteService">
+            <summary>
+            Application service responsible for handling all operations related to quotes,
+            including price calculation, job management, and CSV-based bulk import.
+            <para/>
+            This service acts as the primary application layer orchestrator:
+            1. Interacts with domain validators and repositories.
+            2. Ensures quotes are validated against business rules (WeightTiers, promotions, surcharges).
+            3. Manages CSV imports and persists jobs for asynchronous processing.
+            </summary>
+        </member>
+        <member name="M:MiniPricingApp.Modules.Qoutes.Application.Services.QouteService.CalculatePrice(MiniPricingApp.Modules.Qoutes.Application.Dtos.PricingCalculationRequestDto)">
+            <summary>
+            Calculates the final price for a quote based on weight, area, and pricing rules.
+            </summary>
+            <param name="request">The pricing calculation request DTO containing weight and area code.</param>
+            <returns>A response containing the calculated price.</returns>
+        </member>
+        <member name="M:MiniPricingApp.Modules.Qoutes.Application.Services.QouteService.SaveFromFile(Microsoft.AspNetCore.Http.IFormFile)">
+            <summary>
+            Saves quotes from an uploaded CSV file. 
+            Background Task will work in 1 minute after you completed uploaded, please wait for 1 minute and check again
+            <para/>
+            Steps:
+            1. Validate file existence and extension (.csv only).
+            2. Save file to a dedicated folder under the application root.
+            3. Validate CSV format and content using <see cref="T:MiniPricingApp.Modules.Qoutes.Domain.Interfaces.IQouteCsvValidator"/>.
+            4. Persist a job entity for tracking processing.
+            5. If validation fails, the uploaded file is deleted to prevent orphaned files.
+            </summary>
+            <param name="file">The uploaded CSV file.</param>
+            <returns>A <see cref="T:MiniPricingApp.Shares.Common.BaseResponse`1"/> containing the new job Id.</returns>
+            <exception cref="T:MiniPricingApp.Shares.Exceptions.FileException">Thrown if the file is empty or not a CSV.</exception>
+            <exception cref="T:MiniPricingApp.Shares.Exceptions.CsvFormatException">Thrown if CSV validation fails.</exception>
+        </member>
+        <member name="M:MiniPricingApp.Modules.Qoutes.Application.Services.QouteService.GetJobById(System.Guid)">
+            <summary>
+            Retrieves a job by its unique identifier.
+            </summary>
+            <param name="id">The job's unique identifier.</param>
+            <returns>A <see cref="T:MiniPricingApp.Shares.Common.BaseResponse`1"/> containing the job and status.</returns>
+        </member>
+        <member name="T:MiniPricingApp.Modules.qoutes.QouteController">
+            <summary>
+            Manages creation, Update, and retrieval of pricing rules.
+            </summary>
+        </member>
+        <member name="T:MiniPricingApp.Modules.Rules.Application.Services.RuleService">
+            <summary>
+            Application service responsible for managing pricing rules in the system.
+            <para/>
+            Responsibilities include:
+            1. Creating, updating, retrieving, and deleting pricing rules.
+            2. Validating rules using the appropriate <see cref="T:MiniPricingApp.Modules.Rules.Domains.Interface.IPricingRuleValidator"/> from the validator factory.
+            3. Delegating object creation to <see cref="T:MiniPricingApp.Modules.Rules.Domains.Factory.PricingRuleFactory"/> to ensure consistent and valid entity construction.
+            </summary>
+        </member>
+        <member name="M:MiniPricingApp.Modules.Rules.Application.Services.RuleService.CreateRule(MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleRequestDto)">
+            <summary>
+            Creates a new pricing rule.
+            <para/>
+            Steps:
+            1. Use the <see cref="T:MiniPricingApp.Modules.Rules.Domains.Factory.PricingRuleFactory"/> to construct the correct rule entity.
+            2. Validate the rule using the corresponding validator from <see cref="T:MiniPricingApp.Modules.Rules.Domains.Interface.IPricingRuleValidatorFactory"/>.
+            3. Save the rule to the repository.
+            </summary>
+            <param name="request">The DTO containing rule data.</param>
+            <returns>A <see cref="T:MiniPricingApp.Shares.Common.BaseResponse`1"/> with the created rule Id.</returns>
+        </member>
+        <member name="M:MiniPricingApp.Modules.Rules.Application.Services.RuleService.UpdateRule(System.Guid,MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleRequestDto)">
+            <summary>
+            Updates an existing pricing rule.
+            <para/>
+            Steps:
+            1. Create a new rule entity using the factory with the Updated values.
+            2. Set its Id to match the existing rule.
+            3. Save the Updated rule to the repository.
+            </summary>
+            <param name="Id">The Id of the rule to Update.</param>
+            <param name="request">The Updated rule data.</param>
+            <returns>A <see cref="T:MiniPricingApp.Shares.Common.BaseResponse`1"/> containing the Updated rule Id.</returns>
+        </member>
+        <member name="T:MiniPricingApp.Modules.Rules.Domains.Factory.PricingRuleValidatorFactory">
+            <summary>
+            Factory responsible for resolving the appropriate validator instance
+            based on the provided <see cref="T:MiniPricingApp.Modules.Rules.Domains.Entities.BasePricingRule"/>.
+            <br/><br/>
+            This allows each pricing rule type (e.g., WeightTier, TimeWindowPromotion)
+            to have its own validation logic encapsulated in an <see cref="T:MiniPricingApp.Modules.Rules.Domains.Interface.IPricingRuleValidator"/>.
+            </summary>
+        </member>
+        <member name="M:MiniPricingApp.Modules.Rules.Domains.Factory.PricingRuleValidatorFactory.GetValidator(MiniPricingApp.Modules.Rules.Domains.Entities.BasePricingRule)">
+            <summary>
+            Retrieves the appropriate validator for a given pricing rule.
+            </summary>
+            <param name="rule">The pricing rule that requires validation.</param>
+            <returns>
+            A matching <see cref="T:MiniPricingApp.Modules.Rules.Domains.Interface.IPricingRuleValidator"/> if supported,
+            or <c>null</c> if the rule type has no associated validator.
+            </returns>
+        </member>
+        <member name="T:MiniPricingApp.Modules.Rules.Domains.Services.WeightTierDomainService">
+            <summary>
+            Domain service responsible for weight-tier related business logic.
+            This service isolates all WeightTier evaluation rules from the application,
+            following the Domain Service pattern (DDD).
+            </summary>
+        </member>
+        <member name="M:MiniPricingApp.Modules.Rules.Domains.Services.WeightTierDomainService.GetNextMinWeight">
+            <summary>
+            Retrieves the next minimum weight boundary used when creating a new WeightTier.
+            
+            Logic:
+            - Fetch the last tier based on MaxWeight (highest weight range).
+            - If none exists, start the first tier at 0.
+            - Otherwise, the next tier must begin at (last.MaxWeight + 1).
+            </summary>
+        </member>
+        <member name="M:MiniPricingApp.Modules.Rules.Domains.Services.WeightTierDomainService.ExistsTierForWeight(System.Single)">
+             <summary>
+             Checks if there is ANY WeightTier rule that covers the given weight.
+            
+             Why this check is needed:
+             - When calculating price for a quote, the weight must fall into an existing
+               WeightTier rule. If not, pricing rules cannot be applied correctly.
+             - This prevents invalid or incomplete configurations.
+            
+             Steps:
+             1. Load all pricing rules.
+             2. Filter only WeightTierEntity (since the repository returns BasePricingRuleEntity).
+             3. Check if any WeightTier has a range [MinWeight, MaxWeight] that includes the input.
+             </summary>
+        </member>
+        <member name="T:MiniPricingApp.Modules.Rules.Domains.Validator.WeightTierValidator">
+            <summary>
+            Validator for <see cref="T:MiniPricingApp.Modules.Rules.Domains.Entities.WeightTierEntity"/> rules.
+            Ensures that any new WeightTier added to the system is valid and does not conflict
+            with existing tiers.
+            </summary>
+        </member>
+        <member name="M:MiniPricingApp.Modules.Rules.Domains.Validator.WeightTierValidator.Validate(MiniPricingApp.Modules.Rules.Domains.Entities.BasePricingRule)">
+            <summary>
+            Validates a <see cref="T:MiniPricingApp.Modules.Rules.Domains.Entities.WeightTierEntity"/> to ensure:
+            1. The new tier does not overlap with the last existing tier.
+            2. The minimum weight is strictly less than the maximum weight.
+            
+            Logic:
+            - If <paramref name="rule"/> is not a WeightTierEntity, the method returns without action.
+            - Retrieves the last WeightTier from the repository to check for overlaps.
+            - Throws <see cref="T:System.InvalidOperationException"/> if the new tier overlaps or min >= max.
+            
+            This prevents gaps or duplicate coverage in weight ranges, ensuring all weights
+            are properly accounted for during price calculation.
+            </summary>
+            <param name="rule">The pricing rule to validate.</param>
+            <exception cref="T:System.InvalidOperationException">
+            Thrown if the WeightTier overlaps an existing tier or has invalid min/max weights.
+            </exception>
+        </member>
+        <member name="T:MiniPricingApp.Modules.Rules.RuleController">
+            <summary>
+            Controller for managing pricing rules.
+            Provides endpoints to create, Update, and retrieve pricing rules.
+            </summary>
+        </member>
+    </members>
+</doc>
