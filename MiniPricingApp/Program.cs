@@ -17,11 +17,32 @@ using MiniPricingApp.Modules.Rules.Infrastructure.Interface;
 using Serilog;
 using System.Reflection;
 using System.Threading.Channels;
+using System.Threading.RateLimiting;
 
 var builder = WebApplication.CreateBuilder(args);
+// Add rate limiting
+builder.Services.AddRateLimiter(options =>
+{
+    options.GlobalLimiter = PartitionedRateLimiter.Create<HttpContext, string>(httpContext =>
+    {
+        // Use client IP as key
+        var clientIp = httpContext.Connection.RemoteIpAddress?.ToString() ?? "anonymous";
+
+        // Limit: 5 requests per minute per IP
+        return RateLimitPartition.GetFixedWindowLimiter(clientIp, _ => new FixedWindowRateLimiterOptions
+        {
+            PermitLimit = 5,
+            Window = TimeSpan.FromMinutes(1),
+            QueueProcessingOrder = QueueProcessingOrder.OldestFirst,
+            QueueLimit = 2
+        });
+    });
+
+    options.RejectionStatusCode = 429; // Too Many Requests
+});
+
 
 // Add services to the container.
-
 builder.Services.AddControllers().AddJsonOptions(options =>
 {
     options.JsonSerializerOptions.Converters.Add(new System.Text.Json.Serialization.JsonStringEnumConverter());

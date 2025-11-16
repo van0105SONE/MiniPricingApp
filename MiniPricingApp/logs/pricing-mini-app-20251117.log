@@ -649,3 +649,881 @@ System.Exception: Rules with Id 2fa62982-8976-4e11-bd44-113057a14044 not found.
 2025-11-17 01:05:18.102 +07:00 [INF] Executed action MiniPricingApp.Modules.qoutes.QouteController.GetAllJob (MiniPricingApp) in 10.1467ms
 2025-11-17 01:05:18.106 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.qoutes.QouteController.GetAllJob (MiniPricingApp)'
 2025-11-17 01:05:18.109 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/jobs/all - 200 null application/json; charset=utf-8 33.7943ms
+2025-11-17 01:40:21.731 +07:00 [INF] START WORKING WITH JOB ==> bf0523f8-a3db-4431-9521-5292537b9708
+2025-11-17 01:40:21.944 +07:00 [INF] COMPLETE WORKING WITH JOB ==> bf0523f8-a3db-4431-9521-5292537b9708
+2025-11-17 01:40:22.058 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-17 01:40:22.082 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-17 01:40:22.084 +07:00 [INF] Hosting environment: Development
+2025-11-17 01:40:22.087 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-17 01:40:25.007 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/swagger/index.html - null null
+2025-11-17 01:40:25.293 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/swagger/index.html - 200 null text/html;charset=utf-8 292.6565ms
+2025-11-17 01:40:25.319 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - null null
+2025-11-17 01:40:25.320 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/_vs/browserLink - null null
+2025-11-17 01:40:25.324 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_framework/aspnetcore-browser-refresh.js - 200 16513 application/javascript; charset=utf-8 4.9071ms
+2025-11-17 01:40:25.382 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/_vs/browserLink - 200 null text/javascript; charset=UTF-8 62.0646ms
+2025-11-17 01:40:25.630 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/openapi/v1.json - null null
+2025-11-17 01:40:25.671 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-17 01:40:25.681 +07:00 [INF] Executing endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-17 01:40:25.799 +07:00 [INF] Executed endpoint 'HTTP: GET /openapi/{documentName}.json'
+2025-11-17 01:40:25.801 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/openapi/v1.json - 200 null application/json;charset=utf-8 171.6143ms
+2025-11-17 01:40:28.947 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:28.959 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:28.989 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:29.005 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:29.039 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:29.067 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 69.4962ms
+2025-11-17 01:40:29.079 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:29.082 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 135.6119ms
+2025-11-17 01:40:29.915 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:29.922 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:29.925 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:29.929 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:29.932 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:29.935 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 6.1753ms
+2025-11-17 01:40:29.938 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:29.940 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 25.0387ms
+2025-11-17 01:40:30.197 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:30.210 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:30.219 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:30.232 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:30.239 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:30.244 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 15.5291ms
+2025-11-17 01:40:30.247 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:30.249 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 52.4624ms
+2025-11-17 01:40:30.351 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:30.358 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:30.360 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:30.364 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:30.367 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:30.369 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 5.4178ms
+2025-11-17 01:40:30.372 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:30.374 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 23.8056ms
+2025-11-17 01:40:30.486 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:30.492 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:30.494 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:30.498 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:30.500 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:30.503 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 5.2039ms
+2025-11-17 01:40:30.505 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:30.507 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 21.0476ms
+2025-11-17 01:40:30.739 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:30.749 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:30.751 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:30.755 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:30.756 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:30.759 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.645ms
+2025-11-17 01:40:30.761 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:30.764 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 24.1747ms
+2025-11-17 01:40:30.897 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:30.905 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:30.909 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:30.912 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:30.915 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:30.917 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 5.7119ms
+2025-11-17 01:40:30.920 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:30.922 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 24.9777ms
+2025-11-17 01:40:31.044 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:31.051 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:31.054 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:31.058 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:31.060 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:31.062 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.2236ms
+2025-11-17 01:40:31.065 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:31.067 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 23.048ms
+2025-11-17 01:40:31.165 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:31.173 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:31.175 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:31.181 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:31.183 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:31.186 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.9895ms
+2025-11-17 01:40:31.188 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:31.190 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 25.1774ms
+2025-11-17 01:40:31.311 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:31.318 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:31.320 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:31.324 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:31.326 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:31.329 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 5.1271ms
+2025-11-17 01:40:31.332 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:31.334 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 23.2408ms
+2025-11-17 01:40:31.455 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:31.464 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:31.467 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:31.471 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:31.473 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:31.476 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.9368ms
+2025-11-17 01:40:31.478 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:31.480 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 25.4078ms
+2025-11-17 01:40:31.588 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:31.594 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:31.596 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:31.599 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:31.601 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:31.603 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.5456ms
+2025-11-17 01:40:31.606 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:31.608 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 19.9708ms
+2025-11-17 01:40:31.727 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:31.735 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:31.737 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:31.747 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:31.751 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:31.757 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 10.101ms
+2025-11-17 01:40:31.762 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:31.764 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 37.5995ms
+2025-11-17 01:40:31.858 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:31.864 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:31.867 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:31.870 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:31.872 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:31.875 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.8923ms
+2025-11-17 01:40:31.877 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:31.880 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 21.8725ms
+2025-11-17 01:40:32.003 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:32.013 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:32.017 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:32.023 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:32.024 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:32.027 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.5598ms
+2025-11-17 01:40:32.030 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:32.032 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 28.9248ms
+2025-11-17 01:40:32.134 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:32.142 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:32.145 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:32.148 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:32.150 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:32.153 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.8952ms
+2025-11-17 01:40:32.156 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:32.158 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 24.0092ms
+2025-11-17 01:40:32.282 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:32.289 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:32.291 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:32.296 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:32.298 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:32.301 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.9739ms
+2025-11-17 01:40:32.304 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:32.306 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 24.4035ms
+2025-11-17 01:40:32.420 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:32.426 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:32.429 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:32.434 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:32.436 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:32.440 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 6.2524ms
+2025-11-17 01:40:32.442 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:32.444 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 24.1691ms
+2025-11-17 01:40:35.332 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:35.348 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:35.353 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:35.360 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:35.365 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:35.375 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 15.7888ms
+2025-11-17 01:40:35.386 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:35.394 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 61.9295ms
+2025-11-17 01:40:35.466 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:35.475 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:35.479 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:35.483 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:35.485 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:35.488 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 5.9329ms
+2025-11-17 01:40:35.492 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:35.495 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 29.5739ms
+2025-11-17 01:40:35.610 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:35.617 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:35.619 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:35.622 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:35.624 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:35.627 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 5.2415ms
+2025-11-17 01:40:35.629 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:35.631 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 21.2083ms
+2025-11-17 01:40:35.770 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:35.778 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:35.781 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:35.786 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:35.788 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:35.791 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 5.1033ms
+2025-11-17 01:40:35.794 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:35.796 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 26.1872ms
+2025-11-17 01:40:35.908 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:35.915 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:35.917 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:35.920 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:35.923 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:35.926 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 5.9539ms
+2025-11-17 01:40:35.929 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:35.931 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 22.4779ms
+2025-11-17 01:40:36.066 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:36.077 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:36.079 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:36.083 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:36.085 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:36.088 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 5.4198ms
+2025-11-17 01:40:36.092 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:36.094 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 27.5962ms
+2025-11-17 01:40:36.226 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:36.236 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:36.238 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:36.242 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:36.244 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:36.246 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.4261ms
+2025-11-17 01:40:36.249 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:36.252 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 25.8972ms
+2025-11-17 01:40:36.377 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:36.385 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:36.387 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:36.390 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:36.392 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:36.394 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 3.9704ms
+2025-11-17 01:40:36.397 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:36.399 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 23.0271ms
+2025-11-17 01:40:36.527 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:36.539 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:36.547 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:36.552 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:36.554 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:36.558 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 6.7417ms
+2025-11-17 01:40:36.562 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:36.566 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 39.2851ms
+2025-11-17 01:40:36.669 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:36.679 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:36.681 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:36.684 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:36.686 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:36.688 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.3954ms
+2025-11-17 01:40:36.690 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:36.693 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 23.1821ms
+2025-11-17 01:40:36.822 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:36.829 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:36.831 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:36.834 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:36.836 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:36.839 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.9559ms
+2025-11-17 01:40:36.842 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:36.844 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 22.2479ms
+2025-11-17 01:40:36.967 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:36.972 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:36.975 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:36.979 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:36.981 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:36.985 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 5.4177ms
+2025-11-17 01:40:36.987 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:36.989 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 22.5185ms
+2025-11-17 01:40:37.135 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:37.140 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:37.142 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:37.145 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:37.149 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:37.152 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 6.5024ms
+2025-11-17 01:40:37.154 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:37.156 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 21.4539ms
+2025-11-17 01:40:37.283 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:37.292 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:37.294 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:37.296 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:37.298 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:37.301 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.3192ms
+2025-11-17 01:40:37.303 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:37.305 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 22.0271ms
+2025-11-17 01:40:37.454 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:37.460 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:37.461 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:37.465 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:37.467 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:37.469 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.4698ms
+2025-11-17 01:40:37.471 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:37.473 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 19.4624ms
+2025-11-17 01:40:37.591 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:37.594 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:37.597 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:37.600 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:37.602 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:37.605 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.8841ms
+2025-11-17 01:40:37.607 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:37.609 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 18.3284ms
+2025-11-17 01:40:37.750 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:37.756 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:37.758 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:37.761 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:37.763 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:37.766 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.5946ms
+2025-11-17 01:40:37.768 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:37.769 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 18.8203ms
+2025-11-17 01:40:37.907 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:37.913 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:37.915 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:37.918 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:37.920 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:37.922 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.3951ms
+2025-11-17 01:40:37.924 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:37.926 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 19.0291ms
+2025-11-17 01:40:38.073 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:38.077 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:38.079 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:38.084 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:38.087 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:38.091 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 7.4738ms
+2025-11-17 01:40:38.094 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:38.095 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 22.8785ms
+2025-11-17 01:40:38.221 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:38.226 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:38.228 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:38.231 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:38.233 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:38.235 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 3.8254ms
+2025-11-17 01:40:38.237 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:38.239 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 18.1933ms
+2025-11-17 01:40:38.383 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:38.388 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:38.390 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:38.395 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:38.397 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:38.399 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.889ms
+2025-11-17 01:40:38.401 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:38.403 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 20.8281ms
+2025-11-17 01:40:38.551 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:38.557 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:38.559 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:38.563 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:38.564 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:38.567 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.0639ms
+2025-11-17 01:40:38.569 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:38.570 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 19.8705ms
+2025-11-17 01:40:38.702 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:38.714 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:38.716 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:38.722 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:38.724 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:38.726 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 3.8767ms
+2025-11-17 01:40:38.729 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:38.730 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 28.1435ms
+2025-11-17 01:40:38.864 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:38.869 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:38.871 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:38.875 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:38.877 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:38.880 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 5.0071ms
+2025-11-17 01:40:38.883 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:38.885 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 20.415ms
+2025-11-17 01:40:39.015 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:39.021 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:39.023 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:39.026 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:39.028 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:39.030 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.3804ms
+2025-11-17 01:40:39.033 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:39.036 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 20.4774ms
+2025-11-17 01:40:39.175 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:39.180 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:39.182 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:39.185 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:39.187 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:39.189 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.7484ms
+2025-11-17 01:40:39.191 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:39.193 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 17.9411ms
+2025-11-17 01:40:39.343 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:39.348 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:39.350 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:39.353 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:39.355 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:39.358 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.6473ms
+2025-11-17 01:40:39.387 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:39.390 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 47.5525ms
+2025-11-17 01:40:39.495 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:39.500 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:39.502 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:39.505 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:39.507 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:39.509 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 3.9902ms
+2025-11-17 01:40:39.513 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:39.516 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 20.9697ms
+2025-11-17 01:40:39.654 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:39.660 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:39.663 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:39.667 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:39.669 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:39.672 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.8283ms
+2025-11-17 01:40:39.674 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:39.676 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 21.3055ms
+2025-11-17 01:40:39.816 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:39.823 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:39.825 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:39.828 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:39.829 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:39.832 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.147ms
+2025-11-17 01:40:39.834 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:39.836 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 20.1919ms
+2025-11-17 01:40:39.968 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:39.974 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:39.975 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:39.978 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:39.980 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:39.982 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 3.4723ms
+2025-11-17 01:40:39.984 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:39.986 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 18.0559ms
+2025-11-17 01:40:40.126 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:40.133 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:40.134 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:40.137 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:40.139 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:40.142 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.7325ms
+2025-11-17 01:40:40.144 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:40.148 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 21.9213ms
+2025-11-17 01:40:40.283 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:40.288 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:40.290 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:40.293 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:40.295 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:40.298 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.292ms
+2025-11-17 01:40:40.300 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:40.302 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 18.8618ms
+2025-11-17 01:40:40.454 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:40.461 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:40.463 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:40.466 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:40.468 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:40.471 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.6293ms
+2025-11-17 01:40:40.473 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:40.475 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 21.2817ms
+2025-11-17 01:40:40.600 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:40.606 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:40.608 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:40.611 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:40.613 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:40.615 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.2796ms
+2025-11-17 01:40:40.618 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:40.620 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 19.9593ms
+2025-11-17 01:40:40.741 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:40.747 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:40.749 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:40.752 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:40.755 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:40.757 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.576ms
+2025-11-17 01:40:40.759 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:40.761 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 20.5806ms
+2025-11-17 01:40:40.914 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:40.919 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:40.922 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:40.925 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:40.926 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:40.929 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 3.6649ms
+2025-11-17 01:40:40.931 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:40.933 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 18.1544ms
+2025-11-17 01:40:41.056 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:41.060 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:41.062 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:41.066 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:41.067 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:41.072 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 6.2614ms
+2025-11-17 01:40:41.077 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:41.080 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 24.8582ms
+2025-11-17 01:40:41.213 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:41.218 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:41.220 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:41.224 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:41.227 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:41.230 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 5.7153ms
+2025-11-17 01:40:41.232 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:41.234 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 21.0173ms
+2025-11-17 01:40:41.373 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:41.378 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:41.380 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:41.383 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:41.385 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:41.387 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.5724ms
+2025-11-17 01:40:41.390 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:41.391 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 18.3989ms
+2025-11-17 01:40:41.543 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:41.554 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:41.557 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:41.559 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:41.561 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:41.563 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 3.5003ms
+2025-11-17 01:40:41.565 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:41.567 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 23.5273ms
+2025-11-17 01:40:41.703 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:41.708 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:41.709 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:41.712 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:41.714 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:41.717 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.5443ms
+2025-11-17 01:40:41.719 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:41.721 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 18.6154ms
+2025-11-17 01:40:41.872 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:41.880 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:41.882 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:41.884 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:41.886 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:41.888 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.4706ms
+2025-11-17 01:40:41.891 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:41.893 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 21.1271ms
+2025-11-17 01:40:42.033 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:42.039 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:42.041 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:42.044 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:42.045 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:42.047 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 2.9049ms
+2025-11-17 01:40:42.049 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:42.051 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 17.4101ms
+2025-11-17 01:40:42.188 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:42.200 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:42.203 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:42.207 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:42.211 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:42.215 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 8.1666ms
+2025-11-17 01:40:42.218 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:42.220 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 32.12ms
+2025-11-17 01:40:42.339 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:42.346 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:42.347 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:42.354 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:42.357 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:42.360 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 6.2736ms
+2025-11-17 01:40:42.364 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:42.366 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 27.7755ms
+2025-11-17 01:40:42.489 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:42.494 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:42.496 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:42.499 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:42.501 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:42.503 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 3.8629ms
+2025-11-17 01:40:42.506 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:42.508 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 18.4292ms
+2025-11-17 01:40:42.656 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:42.663 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:42.664 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:42.668 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:42.670 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:42.672 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.3676ms
+2025-11-17 01:40:42.674 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:42.676 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 20.1131ms
+2025-11-17 01:40:42.795 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:42.800 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:42.802 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:42.805 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:42.808 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:42.810 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 5.1409ms
+2025-11-17 01:40:42.812 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:42.814 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 18.8511ms
+2025-11-17 01:40:42.939 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:42.944 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:42.946 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:42.948 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:42.950 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:42.952 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 3.4311ms
+2025-11-17 01:40:42.954 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:42.955 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 16.6739ms
+2025-11-17 01:40:43.078 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:43.084 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:43.088 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:43.092 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:43.094 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:43.097 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 5.0058ms
+2025-11-17 01:40:43.099 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:43.101 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 23.1928ms
+2025-11-17 01:40:43.212 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:43.217 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:43.219 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:43.223 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:43.224 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:43.228 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 5.5046ms
+2025-11-17 01:40:43.231 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:43.233 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 20.8676ms
+2025-11-17 01:40:43.339 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:43.345 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:43.348 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:43.351 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:43.352 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:43.354 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 3.7779ms
+2025-11-17 01:40:43.357 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:43.359 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 20.0848ms
+2025-11-17 01:40:43.458 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:43.464 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:43.466 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:43.469 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:43.471 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:43.473 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.104ms
+2025-11-17 01:40:43.475 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:43.477 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 18.9143ms
+2025-11-17 01:40:43.604 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:43.609 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:43.613 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:43.617 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:43.618 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:43.621 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.0327ms
+2025-11-17 01:40:43.623 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:43.625 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 21.0914ms
+2025-11-17 01:40:43.756 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:43.763 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:43.766 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:43.769 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:43.771 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:43.774 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.8546ms
+2025-11-17 01:40:43.777 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:43.779 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 22.4456ms
+2025-11-17 01:40:43.900 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:43.907 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:43.909 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:43.913 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:43.916 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:43.919 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 5.6654ms
+2025-11-17 01:40:43.921 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:43.923 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 22.9015ms
+2025-11-17 01:40:44.044 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:44.049 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:44.051 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:44.055 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:44.057 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:44.062 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 7.2916ms
+2025-11-17 01:40:44.067 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:44.069 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 24.9696ms
+2025-11-17 01:40:44.191 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:44.198 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:44.201 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:44.206 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:44.208 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:44.210 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 3.6367ms
+2025-11-17 01:40:44.212 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:44.214 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 22.8165ms
+2025-11-17 01:40:44.331 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:44.341 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:44.343 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:44.347 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:44.348 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:44.350 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 3.8167ms
+2025-11-17 01:40:44.353 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:44.355 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 24.4647ms
+2025-11-17 01:40:44.467 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:44.474 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:44.477 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:44.480 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:44.482 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:44.485 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 5.1644ms
+2025-11-17 01:40:44.487 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:44.488 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 21.7343ms
+2025-11-17 01:40:45.719 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:45.730 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:45.732 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:45.735 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:45.737 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:45.739 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.368ms
+2025-11-17 01:40:45.741 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:45.743 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 23.6973ms
+2025-11-17 01:40:45.894 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:45.899 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:45.901 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:45.904 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:45.906 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:45.909 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.5142ms
+2025-11-17 01:40:45.911 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:45.913 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 19.0929ms
+2025-11-17 01:40:46.052 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:46.058 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:46.059 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:46.063 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:46.064 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:46.067 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.5397ms
+2025-11-17 01:40:46.069 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:46.071 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 18.8921ms
+2025-11-17 01:40:46.205 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:46.211 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:46.213 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:46.216 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:46.217 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:46.220 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 3.861ms
+2025-11-17 01:40:46.222 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:46.225 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 19.6622ms
+2025-11-17 01:40:46.367 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:46.373 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:46.377 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:46.380 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:46.382 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:46.384 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 3.967ms
+2025-11-17 01:40:46.386 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:46.388 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 20.4701ms
+2025-11-17 01:40:46.525 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:46.530 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:46.532 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:46.535 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:46.537 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:46.539 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.2191ms
+2025-11-17 01:40:46.542 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:46.543 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 18.0559ms
+2025-11-17 01:40:58.899 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:58.903 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:58.905 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:58.908 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:58.910 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:58.912 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 3.7289ms
+2025-11-17 01:40:58.914 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:58.916 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 17.5977ms
+2025-11-17 01:40:59.057 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:59.066 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:59.068 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:59.071 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:59.072 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:59.074 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 3.8225ms
+2025-11-17 01:40:59.077 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:59.078 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 20.945ms
+2025-11-17 01:40:59.225 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:59.231 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:59.233 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:59.236 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:59.238 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:59.240 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.1343ms
+2025-11-17 01:40:59.242 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:59.244 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 18.7996ms
+2025-11-17 01:40:59.368 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:59.373 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:59.375 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:59.378 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:59.380 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:59.382 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.2775ms
+2025-11-17 01:40:59.384 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:59.386 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 18.5173ms
+2025-11-17 01:40:59.537 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:59.542 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:59.544 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:59.547 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:59.549 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:59.551 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 3.4407ms
+2025-11-17 01:40:59.552 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:59.556 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 18.2113ms
+2025-11-17 01:40:59.682 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:59.686 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:59.688 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:59.691 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:59.693 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:59.695 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.3927ms
+2025-11-17 01:40:59.698 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:59.700 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 18.3692ms
+2025-11-17 01:40:59.848 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:40:59.852 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:59.854 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:40:59.857 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:40:59.859 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:40:59.861 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.1112ms
+2025-11-17 01:40:59.863 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:40:59.865 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 17.0204ms
+2025-11-17 01:41:10.551 +07:00 [INF] Now listening on: http://localhost:5254
+2025-11-17 01:41:10.636 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2025-11-17 01:41:10.641 +07:00 [INF] Hosting environment: Development
+2025-11-17 01:41:10.644 +07:00 [INF] Content root path: C:\Users\ACER\source\repos\MiniPricingApp\MiniPricingApp
+2025-11-17 01:41:14.875 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:41:14.932 +07:00 [WRN] Failed to determine the https port for redirect.
+2025-11-17 01:41:14.942 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:14.959 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:41:14.966 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:41:14.992 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:41:15.026 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 60.3139ms
+2025-11-17 01:41:15.033 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:15.037 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 167.5408ms
+2025-11-17 01:41:15.130 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:41:15.138 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:15.139 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:41:15.143 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:41:15.145 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:41:15.148 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.8718ms
+2025-11-17 01:41:15.151 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:15.153 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 23.8069ms
+2025-11-17 01:41:15.280 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:41:15.287 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:15.292 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:41:15.301 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:41:15.303 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:41:15.306 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 9.3826ms
+2025-11-17 01:41:15.309 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:15.311 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 30.9122ms
+2025-11-17 01:41:15.422 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:41:15.433 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:15.438 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:41:15.442 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:41:15.445 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:41:15.448 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 5.5002ms
+2025-11-17 01:41:15.450 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:15.453 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 30.6557ms
+2025-11-17 01:41:15.583 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:41:15.590 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:15.591 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:41:15.594 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:41:15.595 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:41:15.598 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.0142ms
+2025-11-17 01:41:15.600 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:15.601 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 18.2466ms
+2025-11-17 01:41:15.731 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:41:15.735 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:15.738 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:41:15.742 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:41:15.744 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:41:15.746 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.4278ms
+2025-11-17 01:41:15.748 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:15.750 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 18.8249ms
+2025-11-17 01:41:15.888 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:41:15.893 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:15.895 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:41:15.908 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:41:15.910 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:41:15.913 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.5129ms
+2025-11-17 01:41:15.917 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:15.918 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 30.7794ms
+2025-11-17 01:41:16.009 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:41:16.015 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:16.017 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:41:16.021 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:41:16.022 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:41:16.025 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.6872ms
+2025-11-17 01:41:16.028 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:16.030 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 20.1523ms
+2025-11-17 01:41:16.163 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:41:16.173 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:16.175 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:41:16.179 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:41:16.181 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:41:16.184 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 5.1605ms
+2025-11-17 01:41:16.186 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:16.188 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 25.7296ms
+2025-11-17 01:41:16.306 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:41:16.312 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:16.314 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:41:16.317 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:41:16.320 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:41:16.322 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 5.1209ms
+2025-11-17 01:41:16.325 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:16.327 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 21.603ms
+2025-11-17 01:41:16.467 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:41:16.473 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:16.475 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:41:16.479 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:41:16.481 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:41:16.483 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.6138ms
+2025-11-17 01:41:16.485 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:16.488 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 20.484ms
+2025-11-17 01:41:16.626 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:41:16.637 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:16.640 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:41:16.645 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:41:16.647 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:41:16.650 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.7911ms
+2025-11-17 01:41:16.652 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:16.654 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 28.2441ms
+2025-11-17 01:41:16.755 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:41:16.760 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:16.763 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:41:16.766 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:41:16.769 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:41:16.771 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 4.9186ms
+2025-11-17 01:41:16.775 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:16.777 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 22.1977ms
+2025-11-17 01:41:16.914 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:41:16.930 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:16.934 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:41:16.956 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:41:16.963 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:41:16.968 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 11.624ms
+2025-11-17 01:41:16.970 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:16.973 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 58.8504ms
+2025-11-17 01:41:17.069 +07:00 [INF] Request starting HTTP/1.1 GET http://localhost:5254/rules/all - null null
+2025-11-17 01:41:17.074 +07:00 [INF] Executing endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:17.076 +07:00 [INF] Route matched with {action = "GetRules", controller = "Rule"}. Executing controller action with signature System.Threading.Tasks.Task`1[Microsoft.AspNetCore.Mvc.IActionResult] GetRules() on controller MiniPricingApp.Modules.Rules.RuleController (MiniPricingApp).
+2025-11-17 01:41:17.079 +07:00 [INF] RECIEVE QOURY PARAM TO GET RULES ==> 
+2025-11-17 01:41:17.081 +07:00 [INF] Executing OkObjectResult, writing value of type 'MiniPricingApp.Shares.Common.BaseResponse`1[[System.Collections.Generic.List`1[[MiniPricingApp.Modules.Rules.Application.Dtos.PricingRuleResponseDto, MiniPricingApp, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=9.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]'.
+2025-11-17 01:41:17.084 +07:00 [INF] Executed action MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp) in 5.1ms
+2025-11-17 01:41:17.088 +07:00 [INF] Executed endpoint 'MiniPricingApp.Modules.Rules.RuleController.GetRules (MiniPricingApp)'
+2025-11-17 01:41:17.090 +07:00 [INF] Request finished HTTP/1.1 GET http://localhost:5254/rules/all - 200 null application/json; charset=utf-8 20.4703ms

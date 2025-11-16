@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\ACER\\source\\repos\\MiniPricingApp\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{431B4DF6-6490-43A0-87CC-F36917665586}|MiniPricingApp\\MiniPricingApp.csproj|c:\\users\\acer\\source\\repos\\minipricingapp\\minipricingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{431B4DF6-6490-43A0-87CC-F36917665586}|MiniPricingApp\\MiniPricingApp.csproj|solutionrelative:minipricingapp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{431B4DF6-6490-43A0-87CC-F36917665586}|MiniPricingApp\\MiniPricingApp.csproj|c:\\users\\acer\\source\\repos\\minipricingapp\\minipricingapp\\tests\\unit\\qoutes\\service\\qouteservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{431B4DF6-6490-43A0-87CC-F36917665586}|MiniPricingApp\\MiniPricingApp.csproj|solutionrelative:minipricingapp\\tests\\unit\\qoutes\\service\\qouteservicetests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -79,6 +83,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MiniPricingApp\\MiniPricingApp\\Program.cs",
+              "RelativeDocumentMoniker": "MiniPricingApp\\Program.cs",
+              "ToolTip": "C:\\Users\\ACER\\source\\repos\\MiniPricingApp\\MiniPricingApp\\Program.cs",
+              "RelativeToolTip": "MiniPricingApp\\Program.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-16T18:39:36.446Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "QouteServiceTests.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MiniPricingApp\\MiniPricingApp\\Tests\\Unit\\Qoutes\\Service\\QouteServiceTests.cs",
               "RelativeDocumentMoniker": "MiniPricingApp\\Tests\\Unit\\Qoutes\\Service\\QouteServiceTests.cs",
@@ -91,7 +108,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "QouteEntity.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MiniPricingApp\\MiniPricingApp\\Modules\\Qoutes\\Domain\\Entities\\QouteEntity.cs",
               "RelativeDocumentMoniker": "MiniPricingApp\\Modules\\Qoutes\\Domain\\Entities\\QouteEntity.cs",
@@ -103,7 +120,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "JobEntity.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MiniPricingApp\\MiniPricingApp\\Modules\\Qoutes\\Domain\\Entities\\JobEntity.cs",
               "RelativeDocumentMoniker": "MiniPricingApp\\Modules\\Qoutes\\Domain\\Entities\\JobEntity.cs",
@@ -115,7 +132,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "QouteService.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MiniPricingApp\\MiniPricingApp\\Modules\\Qoutes\\Application\\Services\\QouteService.cs",
               "RelativeDocumentMoniker": "MiniPricingApp\\Modules\\Qoutes\\Application\\Services\\QouteService.cs",
@@ -127,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "RuleService.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MiniPricingApp\\MiniPricingApp\\Modules\\Rules\\Application\\Services\\RuleService.cs",
               "RelativeDocumentMoniker": "MiniPricingApp\\Modules\\Rules\\Application\\Services\\RuleService.cs",
@@ -139,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "PricingRuleResponseDto.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MiniPricingApp\\MiniPricingApp\\Modules\\Rules\\Application\\Dtos\\PricingRuleResponseDto.cs",
               "RelativeDocumentMoniker": "MiniPricingApp\\Modules\\Rules\\Application\\Dtos\\PricingRuleResponseDto.cs",
@@ -151,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "PricingRuleServiceTests.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MiniPricingApp\\MiniPricingApp\\Tests\\Unit\\Rules\\Services\\PricingRuleServiceTests.cs",
               "RelativeDocumentMoniker": "MiniPricingApp\\Tests\\Unit\\Rules\\Services\\PricingRuleServiceTests.cs",
@@ -163,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "PricingRuleFactory.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MiniPricingApp\\MiniPricingApp\\Modules\\Rules\\Domains\\Factory\\PricingRuleFactory.cs",
               "RelativeDocumentMoniker": "MiniPricingApp\\Modules\\Rules\\Domains\\Factory\\PricingRuleFactory.cs",
@@ -175,7 +192,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "BasePricingRuleMapper.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MiniPricingApp\\MiniPricingApp\\Modules\\Rules\\Application\\Mapper\\BasePricingRuleMapper.cs",
               "RelativeDocumentMoniker": "MiniPricingApp\\Modules\\Rules\\Application\\Mapper\\BasePricingRuleMapper.cs",
@@ -187,7 +204,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "PricingRuleRequestDto.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MiniPricingApp\\MiniPricingApp\\Modules\\Rules\\Application\\Dtos\\PricingRuleRequestDto.cs",
               "RelativeDocumentMoniker": "MiniPricingApp\\Modules\\Rules\\Application\\Dtos\\PricingRuleRequestDto.cs",
@@ -199,7 +216,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "PricingRuleDto.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MiniPricingApp\\MiniPricingApp\\Modules\\Rules\\Application\\Dtos\\PricingRuleDto.cs",
               "RelativeDocumentMoniker": "MiniPricingApp\\Modules\\Rules\\Application\\Dtos\\PricingRuleDto.cs",
@@ -211,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "WeightTierEntity.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MiniPricingApp\\MiniPricingApp\\Modules\\Rules\\Domains\\Entities\\WeightTierEntity.cs",
               "RelativeDocumentMoniker": "MiniPricingApp\\Modules\\Rules\\Domains\\Entities\\WeightTierEntity.cs",
@@ -223,7 +240,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "TimeWindowPromotion.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MiniPricingApp\\MiniPricingApp\\Modules\\Rules\\Domains\\Entities\\TimeWindowPromotion.cs",
               "RelativeDocumentMoniker": "MiniPricingApp\\Modules\\Rules\\Domains\\Entities\\TimeWindowPromotion.cs",
@@ -231,12 +248,11 @@
               "RelativeToolTip": "MiniPricingApp\\Modules\\Rules\\Domains\\Entities\\TimeWindowPromotion.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-16T17:37:54.564Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-11-16T17:37:54.564Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "BasePricingRule.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MiniPricingApp\\MiniPricingApp\\Modules\\Rules\\Domains\\Entities\\BasePricingRule.cs",
               "RelativeDocumentMoniker": "MiniPricingApp\\Modules\\Rules\\Domains\\Entities\\BasePricingRule.cs",
@@ -248,7 +264,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PricingRuleRepository.cs",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MiniPricingApp\\MiniPricingApp\\Modules\\Rules\\Infrastructure\\Implementations\\PricingRuleRepository.cs",
               "RelativeDocumentMoniker": "MiniPricingApp\\Modules\\Rules\\Infrastructure\\Implementations\\PricingRuleRepository.cs",
@@ -260,7 +276,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "pricing_rules.json",
               "DocumentMoniker": "C:\\Users\\ACER\\source\\repos\\MiniPricingApp\\MiniPricingApp\\Modules\\Rules\\Infrastructure\\pricing_rules.json",
               "RelativeDocumentMoniker": "MiniPricingApp\\Modules\\Rules\\Infrastructure\\pricing_rules.json",
