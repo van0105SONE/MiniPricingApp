@@ -3,5 +3,15 @@
     "Id": "4421e7ab-e42d-4bc3-b7f0-dd4ec46d5d7b",
     "Status": 2,
     "FilePath": "C:\\Users\\ACER\\source\\repos\\MiniPricingApp\\MiniPricingApp\\Modules\\Qoutes\\Infrastructure\\UploadedCsv\\4421e7ab-e42d-4bc3-b7f0-dd4ec46d5d7b_CSV_TEST_CASE.csv"
+  },
+  {
+    "Id": "51056b3b-b4a1-4688-80f3-4c39e22da6f9",
+    "Status": 2,
+    "FilePath": "C:\\Users\\ACER\\source\\repos\\MiniPricingApp\\MiniPricingApp\\Modules\\Qoutes\\Infrastructure\\UploadedCsv\\51056b3b-b4a1-4688-80f3-4c39e22da6f9_test.csv"
+  },
+  {
+    "Id": "bf0523f8-a3db-4431-9521-5292537b9708",
+    "Status": 0,
+    "FilePath": "C:\\Users\\ACER\\source\\repos\\MiniPricingApp\\MiniPricingApp\\Modules\\Qoutes\\Infrastructure\\UploadedCsv\\bf0523f8-a3db-4431-9521-5292537b9708_test.csv"
   }
 ]

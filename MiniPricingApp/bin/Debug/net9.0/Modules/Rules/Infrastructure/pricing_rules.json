@@ -22,13 +22,13 @@
   {
     "RuleType": "RemoteAreaSurcharge",
     "RemoteAreas": [
-      "A11"
+      "A22"
     ],
-    "Surcharge": 20,
-    "Id": "a56c5f0a-591e-4db5-ab72-52c4ab034bab",
+    "Surcharge": 10,
+    "Id": "f00b51fa-9cbb-4e12-a771-c16e4d389a93",
     "Priority": 2,
-    "EffectiveFrom": "2025-11-16T17:58:27.72Z",
-    "EffectiveTo": "2025-11-16T17:58:27.72Z",
+    "EffectiveFrom": "2025-11-16T17:44:12.986Z",
+    "EffectiveTo": "2025-11-19T17:44:12.986Z",
     "IsActive": true
   }
 ]
