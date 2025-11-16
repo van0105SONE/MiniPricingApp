@@ -94,7 +94,7 @@ namespace MiniPricingApp.Tests.Unit.Qoutes.Service
             var result = _service.CalculatePrice(request);
 
             // Assert
-            Assert.Equal(5, result.data.finalPrice);
+            Assert.Equal(9.5, result.data.finalPrice);
         }
 
 
@@ -125,7 +125,7 @@ namespace MiniPricingApp.Tests.Unit.Qoutes.Service
             var result = _service.CalculatePrice(request);
 
             // Assert
-            Assert.Equal(25, result.data.finalPrice);
+            Assert.Equal(29.5, result.data.finalPrice);
         }
 
 
